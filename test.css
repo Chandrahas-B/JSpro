@@ -1,0 +1,113 @@
+:root {
+    --blue: #0074D9;
+    --darkblue: #005FB2;
+  }
+body{
+    background-image: linear-gradient(to right, rgb(171, 12, 245),rgb(20, 223, 138));
+}
+
+#everything{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+#tit{
+    text-align: center;
+    font-size:40px;
+    color:white;
+}
+#inp{
+    font-size:30px;
+    border:none;
+    border-bottom:2px solid blue;
+    background:none;
+}
+#inp:hover,#inp:focus{
+    outline:none;
+    border:none;
+    border-bottom:2px solid  lightgreen;
+}
+#inp::-webkit-input-placeholder{
+    color:rgb(167, 212, 209);
+    opacity: 0.8;
+    transition:opacity 1s ease-out;
+}
+#inp:hover::-webkit-input-placeholder,
+#inp:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+#fly{
+    font-size:30px;
+    color:white;
+    opacity:0;
+    transition:opacity 1s ease-out;
+}
+#everything:hover > #fly{
+    opacity:1;
+}
+#btn{
+    font-size:50px;
+    font-weight:bolder;
+    margin-left:-20px;
+    color:white;
+}
+#container{
+    background-image: linear-gradient(to right,rgb(20, 223, 206), rgb(12, 245, 136),rgb(7, 248, 99));
+    box-shadow:2px 2px purple;   
+    min-width:350px;
+    font-size:25px;
+    transition:all .3s ease-out;
+}
+#container span{
+  padding:2px;
+}
+#contain{
+    max-height:400px;
+    overflow-y:scroll;
+}
+#contain::-webkit-scrollbar{
+    background:none;
+    width:5px;
+}
+#contain::-webkit-scrollbar-thumb{
+    background-color:orange;
+    border-radius:10px;
+}
+#addrem{
+ color:whitesmoke;
+ opacity:1;
+ text-decoration: none;
+ transition: all 1s ease-out;
+
+} 
+input:checked ~ #addrem{
+  font-style:bold;
+  opacity:0.4;
+  color:rgb(55, 5, 75);
+  text-decoration: line-through;
+}
+#cross{
+  float:right;
+  font-size:20px;
+  margin-right:8px;
+  font-style: italic;
+}
+#cross:hover{
+  cursor: pointer;
+}
+#btn:hover{
+  transform:scale(0.9);
+  cursor:pointer;
+}
+#container:hover{
+  font-size:30px;
+  box-shadow:4px 4px lightgreen;
+}
+#change{
+    font-size:25px;
+    width:300px;
+    background:none;
+    border:none;
+    outline:none;
+}
